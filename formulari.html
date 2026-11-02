@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+</head>
+
+<body>
+
+    <h1>Formulario de registro</h1>
+
+    <form action="#" method="POST">
+
+        
+
+        <fieldset style="background-color:#943131;">
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre y apellidos:</label>
+            <input type="text" id="nombre" name="nombre"
+                   placeholder="Escribe tu nombre" required>
+            <br><br>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo"
+                   placeholder="ejemplo@gmail.com" required>
+            <br><br>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena"
+                   placeholder="Mínimo 8 caracteres" minlength="8">
+            <br><br>
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha">
+            <br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad"
+                   min="16" max="99"
+                   placeholder="Entre 16 y 99">
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+      
+
+        <fieldset style="background-color:#d9bda6;">
+            <legend>Datos académicos y preferencias</legend>
+
+            <p>Turno de estudio:</p>
+
+            <input type="radio" id="manana" name="turno" value="manana">
+            <label for="manana">Mañana</label>
+
+            <input type="radio" id="tarde" name="turno" value="tarde">
+            <label for="tarde">Tarde</label>
+
+            <br><br>
+
+            <p>Módulos matriculados:</p>
+
+            <input type="checkbox" id="marcas" name="modulos" value="marcas">
+            <label for="marcas">Lenguajes de Marcas</label>
+            <br>
+
+            <input type="checkbox" id="programacion" name="modulos" value="programacion">
+            <label for="programacion">Programación</label>
+            <br>
+
+            <input type="checkbox" id="bases" name="modulos" value="bases">
+            <label for="bases">Bases de Datos</label>
+
+            <br><br>
+
+            <label for="experiencia">Nivel de experiencia previa:</label>
+
+            <select id="experiencia" name="experiencia">
+                <option value="sin">Sin experiencia</option>
+                <option value="basico">Básico</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        
+
+        <fieldset style="background-color:#bad2da;">
+            <legend>Observaciones y botones</legend>
+
+            <label for="comentarios">Comentarios / Biografía:</label>
+            <br>
+
+            <textarea id="comentarios" name="comentarios"
+                      rows="4" cols="40"
+                      placeholder="Escribe tus comentarios aquí"></textarea>
+
+            <br><br>
+
+            <input type="checkbox" id="privacidad" name="privacidad"
+                   required>
+            <label for="privacidad">
+                Acepto la política de privacidad
+            </label>
+
+            <br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
